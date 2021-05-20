@@ -1022,13 +1022,14 @@ img.galerie-img {
     border-bottom: 1px solid white;
 }
 
-.essai {
+.contain2slider {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    height: 850px;
 }
 
-.essai img {
+.contain2slider img {
     height: 0;
     width: 0;
     max-width: 0;
@@ -1100,7 +1101,7 @@ img.active {
 }
 
 @media screen and (max-width: 1690px) {
-    .essai img {
+    .contain2slider img {
         max-width: 50vw;
         height: auto;
     }
