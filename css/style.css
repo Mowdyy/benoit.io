@@ -548,86 +548,6 @@ h2#contact {
     }
 }
 
-.affiche img,
-.portrait img,
-.poire img,
-.crayon img {
-    width: 100%;
-    height: 100%;
-}
-
-.affiche {
-    position: absolute;
-    border: 7px solid #222222;
-    height: 17vw;
-    width: 13.26vw;
-    top: 4vw;
-    right: 10vw;
-    z-index: 2;
-}
-
-.portrait {
-    position: absolute;
-    border: 7px solid #222222;
-    height: 30.6vw;
-    width: 24.53vw;
-    top: 17vw;
-    right: 19vw;
-}
-
-.crayon {
-    position: absolute;
-    height: 14.4vw;
-    width: 20.3vw;
-    top: 38vw;
-    right: 13vw;
-}
-
-.poire {
-    position: absolute;
-    border: 7px solid #222222;
-    height: 17vw;
-    width: 13.26vw;
-    top: 43vw;
-    right: 39vw;
-}
-
-.affiche:after,
-.portrait:after,
-.poire:after {
-    position: absolute;
-    content: "";
-    background-color: black;
-    opacity: 0.6;
-    left: 20px;
-    top: 20px;
-    right: -20px;
-    bottom: -20px;
-    display: block;
-    z-index: -1;
-}
-
-.backcontainer {
-    display: flex;
-    justify-content: center;
-}
-
-.index-back {
-    color: #fff;
-    text-decoration: none;
-    background: #4C4C4C;
-    padding: 15px;
-    border-radius: 5px;
-    display: inline-block;
-    font-family: "BigJohn";
-    border-bottom: 1px solid transparent;
-}
-
-.index-back:hover {
-    background: linear-gradient(#B05E5E, #4C4C4C);
-    border-bottom: 1px solid white;
-}
-
 section.parcours {
     height: auto;
     padding-top: 6vw;
@@ -729,7 +649,7 @@ section.skills {
     padding: 15px 20px;
 }
 
-.skills-item h2 {
+.skills-item h1 {
     margin: 0;
     font-family: 'Dosis-Medium';
     font-size: 44px;
@@ -738,7 +658,7 @@ section.skills {
 
 .skills-item p {
     font-family: 'Roboto-Bold';
-    font-size: 1.1vw;
+    font-size: 1.20vw;
 }
 
 .skills-container img {
@@ -756,7 +676,7 @@ section.skills {
 
 @media screen and (max-width: 1700px) {
 
-    .skills-item h2 {
+    .skills-item h1 {
         font-size: 26px;
     }
 
@@ -768,7 +688,7 @@ section.skills {
 
 @media screen and (max-width: 1300px) {
 
-    .skills-item h2 {
+    .skills-item h1 {
         font-size: 18px;
         vertical-align: middle;
     }
@@ -782,10 +702,6 @@ section.skills {
         padding: 5px 15px;
         margin-right: 5px;
     }
-    
-    .skills-item p {
-    font-size: 15px;
-}
 }
 
 
@@ -802,12 +718,7 @@ section.skills {
     }
 
     .skills-item p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    .skills-item p {
+        font-family: 'Roboto-Bold';
         font-size: 16px;
     }
 }
@@ -956,7 +867,7 @@ footer {
     position: relative;
 }
 
-.img:hover .description {
+.img:hover .active + .description {
     opacity: 0.7;
 }
 
@@ -1004,32 +915,13 @@ img.galerie-img {
     top: 1px;
 }
 
-.back {
-    color: #fff;
-    text-decoration: none;
-    background: #4C4C4C;
-    padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-.back:hover {
-    background: linear-gradient(#B05E5E, #4C4C4C);
-    border-bottom: 1px solid white;
-}
-
-.essai {
+.contain2slider {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    height: 850px;
 }
 
-essai img {
+.contain2slider img {
     height: 0;
     width: 0;
     max-width: 0;
@@ -1101,7 +993,7 @@ img.active {
 }
 
 @media screen and (max-width: 1690px) {
-    .essai img {
+    .contain2slider img {
         max-width: 50vw;
         height: auto;
     }
