@@ -649,7 +649,7 @@ section.skills {
     padding: 15px 20px;
 }
 
-.skills-item h1 {
+.skills-item h2 {
     margin: 0;
     font-family: 'Dosis-Medium';
     font-size: 44px;
@@ -676,7 +676,7 @@ section.skills {
 
 @media screen and (max-width: 1700px) {
 
-    .skills-item h1 {
+    .skills-item h2 {
         font-size: 26px;
     }
 
@@ -688,7 +688,7 @@ section.skills {
 
 @media screen and (max-width: 1300px) {
 
-    .skills-item h1 {
+    .skills-item h2 {
         font-size: 18px;
         vertical-align: middle;
     }
